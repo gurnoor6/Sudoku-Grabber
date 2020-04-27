@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title>Form</title>
+</head>
+<body>
+
+	<form method="post" action="">
+		{% csrf_token %}
+		<input placeholder="yourname" name="name">
+		<br>
+		<input placeholder="your age" name="age">
+		<br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
