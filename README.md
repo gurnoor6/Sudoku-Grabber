@@ -18,4 +18,7 @@ To reduce the noise further in the image, it was eroded. What this basically did
 
 Now, to recognise where the sudoku lies, the contours of the image were found which are basically the continuous curves joining the points with same pixel value. The result is shown on a fully black image with the white area representing where the image lied. <br> <img height="300" width="300" src="screenshots/mask.png"><br>
 
-The corner points coordinates were found the image was cropped using the `getPerspectiveTransform` function in OpenCV.<br><img height="300" width="300" src="screenshots/cropped.png"><br>
+The corner points coordinates were found the image was cropped using the `getPerspectiveTransform` function in OpenCV. The result was <br><img height="300" width="300" src="screenshots/cropped.png"><br>
+
+This image after some more preprocessing was thresholded to obtain black and white images which are originally present in the MNIST dataset. The images below represent the thresholded image and the image obtained for each individual cell of the sudoku. <br><img height="300" width="300" src="screenshots/thresh.png"><br>
+<img height="300" width="300" src="screenshots/digits.png"><br>
