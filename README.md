@@ -10,3 +10,6 @@ The structure of the project was as follows -
 The neural network was trained on the MNIST dataset. This is a pretty standard ML problem that almost all the beginners do. Reference was mainly taken from [here](https://machinelearningmastery.com/how-to-develop-a-convolutional-neural-network-from-scratch-for-mnist-handwritten-digit-classification/), although a lot of other resources on the net were used, and a bit of experimentation as well. 
 
 ## Segmenting the Sudoku in Images
+The test image was <br> <img src="screenshots/sudoku.jpg"><br>
+First, the Gaussian Blur was applied to smoothen the image. The image after this is given by <br><img src="screenshots/blur.png"><br>
+The next step involved differentiating the light and dark parts of the image. This was done to recognise the numbers and the boundary lines of the sudoku as distinct from the background region. This was done by thresholding the image. <br><img src="screenshots/threshod.png"><br>
