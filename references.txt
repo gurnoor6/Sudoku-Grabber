@@ -4,5 +4,6 @@ https://machinelearningmastery.com/how-to-develop-a-convolutional-neural-network
 https://www.pyimagesearch.com/2020/08/10/opencv-sudoku-solver-and-ocr/
 https://aishack.in/tutorials/sudoku-grabber-opencv-plot/
 https://elec-club-iitb.github.io/blog/2016/07/sudoku-solver/
+https://www.youtube.com/watch?v=G_UYXzGuqvM
 
 In addition to these, I had taken help from my classmates and their repository for a similar project https://github.com/geekpradd/Visual-Sudoku-Solver
