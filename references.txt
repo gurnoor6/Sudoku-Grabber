@@ -1,0 +1,8 @@
+There were a lot of resources referred for this project. This is not an exhautive list of them. 
+https://www.geeksforgeeks.org/sudoku-backtracking-7/
+https://machinelearningmastery.com/how-to-develop-a-convolutional-neural-network-from-scratch-for-mnist-handwritten-digit-classification/
+https://www.pyimagesearch.com/2020/08/10/opencv-sudoku-solver-and-ocr/
+https://aishack.in/tutorials/sudoku-grabber-opencv-plot/
+https://elec-club-iitb.github.io/blog/2016/07/sudoku-solver/
+
+In addition to these, I had taken help from my classmates and their repository for a similar project https://github.com/geekpradd/Visual-Sudoku-Solver
