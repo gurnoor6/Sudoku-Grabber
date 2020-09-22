@@ -1,4 +1,4 @@
-from .get_digits import get_blocks
+from .recognize_digits import get_blocks
 from tensorflow.keras.models import model_from_json
 import tensorflow as tf
 import numpy as np

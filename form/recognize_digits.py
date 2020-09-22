@@ -8,7 +8,6 @@ def crop_img(src):
 	kernel = np.asarray([[0,1,0],[1,1,1],[0,1,0]],np.uint8)
 	eroded = cv2.erode(thresholded,kernel)
 	contours, hierarchy = cv2.findContours(eroded,cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
-
 	maxA = cv2.contourArea(contours[0],True)
 	max_index= 0
 	for i in range(1,len(contours)):
@@ -82,8 +81,8 @@ def get_blocks(src):
 
 
 if __name__=='__main__':
-	imgs_list = get_blocks("images/sud.jpg")
-	test_imgs = imgs_list
+	imgs_list = get_blocks("images/sudo.jpg")
+	test_imgs,_ = imgs_list
 	i=0
 	for img in test_imgs:
 		cv2.imshow("image",img)
