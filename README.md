@@ -13,3 +13,7 @@ The neural network was trained on the MNIST dataset. This is a pretty standard M
 The test image was <br> <img height="300" width="300" src="screenshots/sudoku.jpg"><br>
 First, the Gaussian Blur was applied to smoothen the image. The image after this is given by <br><img height="300" width="300" src="screenshots/blur.png"><br>
 The next step involved differentiating the light and dark parts of the image. This was done to recognise the numbers and the boundary lines of the sudoku as distinct from the background region. This was done by thresholding the image. <br><img height="300" width="300" src="screenshots/thresholded.png"><br>
+
+To reduce the noise further in the image, it was eroded. What this basically did was replace the regions where there is very less "0" valued pixels into pixel values of "255".<br><img height="300" width="300" src="screenshots/eroded.jpg"><br>
+
+Now, to recognise where the sudoku lies, the contours of the image were found which are basically the continuous curves joining the points with same pixel value. The result is shown on a fully black image with the white area representing where the image lied. <br> <img height="300" width="300" src="screenshots/mask.png"><br>
