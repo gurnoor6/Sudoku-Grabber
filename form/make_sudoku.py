@@ -10,7 +10,6 @@ json_file = open(PROCESSING_FILES+"/NN/model.json",'r')
 loaded_json_model = json_file.read()
 json_file.close()
 model = model_from_json(loaded_json_model)
-graph = tf.get_default_graph()
 model.load_weights(PROCESSING_FILES+"/NN/model.h5")
 
 print("loaded model from disk")
@@ -39,9 +38,7 @@ def make_sudoku(filename):
 			
 	non_empty_blocks = np.asarray(non_empty_blocks)
 	non_empty_blocks = non_empty_blocks.astype('float32')
-	global graph
-	with graph.as_default():
-		predictions = model.predict(non_empty_blocks)
+	predictions = model.predict(non_empty_blocks)
 	
 	y_classes = [np.argmax(y) for y in predictions]
 
