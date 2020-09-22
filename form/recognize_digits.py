@@ -81,7 +81,7 @@ def get_blocks(src):
 
 
 if __name__=='__main__':
-	imgs_list = get_blocks("images/sudo.jpg")
+	imgs_list = get_blocks("images/sudoku.jpg")
 	test_imgs,_ = imgs_list
 	i=0
 	for img in test_imgs:
