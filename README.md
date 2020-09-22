@@ -26,5 +26,15 @@ This image after some more preprocessing was thresholded to obtain black and whi
 ## Solving the sudoku
 The final step involved solving the sudoku. This was done by a backtracking algorithm, inspired from a [video](https://www.youtube.com/watch?v=G_UYXzGuqvM) of Computerphile . The code for the same can be found [here]('form/solve_sudoku.py')
 
+
 ## Deploying a webapp
-The project was deployed using Django. `Django Signals` were used to use the image uploaded by the user for further processing and producing the final results. The results are shown below <br><img height="500" width="500" src="screenshots/final.png"><br>
+The project was deployed using Django. `Django Signals` were used to use the image uploaded by the user for further processing and producing the final results. The results are shown below <br><img height="500" width="900" src="screenshots/final.png"><br>
+
+## Running the project on your system
+Make sure you have the following dependencies installed with the same version. Otherwise there might be issues on using it locally 
+1. tensorflow==2.2.0
+2. Django==3.0.4
+3. numpy==1.18.1
+4. opencv-contrib-python==4.2.0.32
+
+If there are any other packages to be required, I have attached my [pip freeze](pip_freeze.txt). You can check it out and install the required dependency.
