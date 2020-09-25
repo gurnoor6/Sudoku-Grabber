@@ -37,6 +37,9 @@ Make sure you have the following dependencies installed with the same version. O
 3. numpy==1.18.1
 4. opencv-contrib-python==4.2.0.32
 
+Then execute the command, `python manage.py runserver`.
+Open `localhost:8000`.
+
 If there are any other packages to be required, I have attached my [pip freeze](pip_freeze.txt). You can check it out and install the required dependency.
 
 [References](references.txt)
